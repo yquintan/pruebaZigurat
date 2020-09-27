@@ -1,0 +1,64 @@
+$color_green:#72b185;
+
+.main-card{
+    background-image: url(../../img/MIE_cabecera1.jpg);
+    max-width: 100%;
+    padding-top: 30px;
+}
+
+ .mui_logo{
+     img{
+         max-width: 100%;
+     }
+ }
+
+ .mui_h_title{
+    color: $color_green;
+    font-family: montserrat;
+    font-weight: 700px;
+    line-height: 150%;
+    
+}
+
+
+
+
+
+
+
+h4{
+    font-family: montserrat;
+}
+.mui_cont_tab{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-end;
+    padding-left: 60px;
+    .div_img{
+         display: flex;
+            .img{
+                display: flex;
+                width: 80%;
+                
+               }
+            }
+    }
+
+    /* animacion */
+   .animacion {
+       animation-duration: 1s;
+  }    
+  @keyframes func_anima {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0)
+      }    
+    100% {
+         transform: none
+    }
+  } 
+  .call_func {
+     animation-name: func_anima;
+  }
+
+   

@@ -1,0 +1,21 @@
+$color_green:#72b185;
+$color_azul:#34495e;
+#mui_btn_color{
+          border: solid $color_azul 3px;
+          text-transform: uppercase;         
+          &:hover{ 
+              background-color:$color_green;
+              border-color:$color_green;      
+          }
+  }
+
+label{
+    margin-bottom: 0;
+}
+
+.cont{
+    margin-bottom: 70px;
+}
+.label_as::after{
+    content: '*';
+}
