@@ -79,7 +79,7 @@ function form() {
                         <FormGroup className="form-group form-check col-md-12 my-4">
                             <input type="checkbox" className="form-check-input" id="check" required/>
                             <label className="form-check-label" for="check">
-                            <small className="form-text d-inline">Al hacer clic en el botón, usted acepta los términos de uso, política de privacidad,política de cookies y aviso legal.</small></label>                             
+                            <small className="form-text d-inline">Al hacer clic en el botón, usted acepta los <span>términos de uso</span> , <span>política de privacidad</span>, <span>política de cookies</span> y <span>aviso legal</span>.</small></label>                             
                         </FormGroup>
                                             
                         <button type="submit" className="btn btn-outline-dark" id="mui_btn_color">Más información</button> 
