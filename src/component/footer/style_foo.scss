@@ -3,20 +3,28 @@ $color_white:white;
 $color_black:#000000;
 $color_azul:#34495e;
 
-// @import "_variables";
 
 .mui_foo{
   margin: 0px;
 }
 
-// footer pri
+// first container
+
 .mui_pri_footer{
     background-color:$color_green;
     min-height: 180px;
     padding:20px;
+    @media (max-width:425px){
+        img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    }
+    
    }
 
-  
 ul,li{
     text-decoration: none;
     list-style: none;
@@ -31,18 +39,26 @@ a:link, a:visited, a:active,a:hover {
 .mui_prin_ul{
         display: flex;
         flex-flow: row wrap;
-        font-size: 16px;
-        @media (max-width:768px) { 
-            margin: auto;
-        }
-
+        font-size: 16px;         
         li{
              color: $color_white;
-                      
-            }
+             @media (max-width:425px){
+                a{
+                text-align: center;
+                display: block;
+                }
+              }       
+         }
 
         p{
             color: $color_white ;
+        }
+
+        @media (max-width:425px){
+            li {
+            color: white;
+            width: 100%;
+          }
         }
  }
 
@@ -54,10 +70,17 @@ a:link, a:visited, a:active,a:hover {
  .mui_cont_pri_ul{
      display: flex;
      justify-content: center;
-
+     
+        @media (max-width:425px) { 
+            ul p{
+                display: none;
+            }
+       }
  }
+
  
- //footer sec
+ //second container
+
 
 .mui_sec_footer{
     height: 58px;    
@@ -73,15 +96,39 @@ a:link, a:visited, a:active,a:hover {
             display: flex;
             flex-flow: row wrap;
             padding:0px;
-            font-family: 'Lato',arial,sans-serif;      
-        }
+            font-family: 'Lato',arial,sans-serif;
+            @media (max-width:375px){
+                li{
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    padding: 5px 0 5px 0;
+                }
+                p{
+                    display: none;
+                           
+                } 
 
-        .mui_copy{
-        display: flex;
-        align-items: flex-end;
-        padding: 0px 10px;
-        font-family: 'Open Sans';
-    }
+            }
+            li{
+               @media (max-width:425px) { 
+                a{
+                   display: block;                        
+               }} 
+
+            }
+   }
+   .mui_copy{
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 10px;
+    font-family: 'Open Sans';
+    margin-bottom: 20px;
+  }
+
 
 }
+
+
+
 

@@ -6,7 +6,6 @@ import Form from "./form";
 import Table from "../../img/mockup-ebook_MIE.png";
 import "./style.scss"
 
-
 function header() {
 
      return(
@@ -35,9 +34,7 @@ function header() {
             </header> 
        </Fragment>
        )
-    
-    
- 
+         
 }
 
 export default header;
